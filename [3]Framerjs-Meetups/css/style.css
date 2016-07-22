@@ -1,0 +1,79 @@
+.container {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #eee;
+}
+
+header nav {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+header nav > ul.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  font-size: .9rem;
+}
+
+ul.nav > li {
+  display: inline-block;
+}
+
+ul.nav > li a {
+  text-decoration: none;
+  color: #b3b3b3;
+  transition: all .3s ease;
+}
+
+
+ul.nav > li.logo a {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(http://framerjs.com/assets/static/images/logo-24-light@2x.png) no-repeat center center;
+  background-size: contain;
+  width: 20px;
+}
+
+ul.nav > li a:hover {
+  color: #000;
+}
+
+ul.nav > li.active a {
+  color: #000;
+}
+
+ul.nav li.trial a, ul.nav li.buy a {
+  color: #00AAFF;
+}
+
+
+section.header {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+section.header .meetups {
+  float: right;
+}
+
+.meetups ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.col-2 {
+  width: 480px;
+  float: left;
+  margin-right: 60px;
+}
+
+[class*="col-"]:last-child {
+  margin-right: 0;
+}
