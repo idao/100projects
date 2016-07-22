@@ -1,0 +1,128 @@
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  background: url(https://d3ptyyxy2at9ui.cloudfront.net/262ba9000264fb5fe32f55fe9b77be10.svg) no-repeat center center;
+  background-size: 100%;
+  width: 92px;
+  height: 100%;
+}
+
+header .logo a {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+header .menu a {
+  display: inline-block;
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #808080;
+  transition: all .1s ease;
+}
+
+header .menu a:hover {
+  border-bottom: 2px solid #db4c3f;
+  background-color: #fbfbfb;
+}
+
+
+section.overview {
+
+}
+
+
+section.overview .cover {
+  background: url(https://d3ptyyxy2at9ui.cloudfront.net/bc51cd8ccfb3787ee54ad263924a1a0a.jpg) no-repeat;
+  background-size: cover;
+  padding: 8rem 0;
+}
+
+.cover h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cover p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.cover .content {
+  max-width:500px;
+}
+
+.cover a.cover-btn {
+  display: inline-block;
+  background-color: #db4c3f;
+  padding: .8rem 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: .6rem;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.cover a.cover-btn:hover {
+  background-color: #d7382a;
+  box-shadow: none;
+}
+
+section.overview .platforms {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.platforms a.platform {
+  display: inline-block;
+  padding-top: 3.5rem;
+  padding-bottom: .8rem;
+  margin: 2rem 1rem 0 1rem;
+  width: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: #787878;
+  opacity: .6;
+}
+
+a.platform.Web {
+  background: url(../img/test.jpg) no-repeat center top;
+  background-size: 100%;
+}
+
+.platforms a.platform:hover {
+  opacity: 1;
+}
+
+.platforms a.platform.current {
+  opacity: 1;
+  border-bottom: 2px solid #db4c3f;
+}
+
+section.general {
+  font-size: 1.2rem;
+  padding: 12rem 0;
+  background:url(https://d3ptyyxy2at9ui.cloudfront.net/e915adf197f960358d8bbf38756cc948.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+section.general h2, section.general p {
+  width: 50%;
+}
