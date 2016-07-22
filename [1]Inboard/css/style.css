@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+header {
+  background: url(http://inboardapp.com/images/header.jpg) no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 4rem;
+  min-height: 28rem;
+  color: #fff;
+}
+
+header .logo > img {
+  width: 50%;
+}
+
+
+header .description > h1 {
+  font-size: 3.4rem;
+  text-shadow: 0px 1px 3px #323232
+}
+
+header .description > p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #eee;
+}
+
+
+header .download a.btn {
+  display: inline-block;
+  border-radius: 200px;
+  padding: 1.2rem 2.2rem;
+  margin: .6rem;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .1s ease;
+}
+
+
+.download .btn-appstore {
+  background-color: #DD3E1F;
+}
+
+.download .btn-trial {
+  background-color: #2B2522;
+}
+
+.download a.btn:hover {
+  padding: 1.8rem 2.8rem;
+  margin: 0;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+section.feature-description {
+  padding: 3rem 0;
+  overflow:hidden;
+}
+
+section.feature-description .item {
+  margin-bottom: 3rem;
+}
+
+section.feature-description .item > h3 {
+  color: #dd3e1f;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: .6rem;
+}
+
+section.feature-description .item > p {
+  color: #565656;
+  line-height: 1.4rem;
+}
+
+section.feature-description .vertical-show {
+  display: flex;
+  position: relative;
+}
+
+.vertical-show .column-first {
+  width: 50%;
+}
+
+.vertical-show .column-second .screenshot-show {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.screenshot-show img {
+  max-height: 100%;
+}
+
+.horizontal-show {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal-show .item {
+  width: 50%;
+}
+
+
+section.target-user {
+  background-color: #fafafa;
+  padding: 3rem 0;
+}
+
+
+section.target-user .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.target-user .user {
+  width: 30%;
+}
+
+.target-user .user .top-box {
+  padding: 13.5rem 1rem .4rem 1rem;
+  color: #fff;
+  text-shadow: 0 1px 3px #454545;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.target-user .user .bottom-box {
+  padding: 1rem;
+  line-height: 1.3rem;
+  font-size: .85rem;
+  height: 15rem;
+  overflow: hidden;
+}
+
+
+.user.designer .top-box {
+  background: url(http://inboardapp.com/images/hongyuan.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.user.designer .bottom-box {
+  background-color: #093034;
+  color: #B6C1C2;
+}
+
+.user.photographer .top-box {
+  background: url(http://inboardapp.com/images/billijs.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.user.photographer .bottom-box {
+  background-color: #C4AA62;
+  color: #EDE6D0;
+}
+
+.user.developer .top-box {
+  background: url(http://inboardapp.com/images/eoin.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.user.developer .bottom-box {
+  background-color: #4A4040;
+  color: #C9C6C6;
+}
+
+@media screen and (max-width:800px) {
+  section.target-user .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.target-user .user {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .target-user .user .top-box {
+    padding: 4rem 1rem .4rem 1rem;
+    color: #fff;
+    text-shadow: 0 1px 3px #454545;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
+  .target-user .user .bottom-box {
+    padding: 1rem;
+    line-height: 1.3rem;
+    font-size: .85rem;
+    height: auto;
+  }
+}
+
+section.team {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+section.team .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+section.team .about , section.team .projects {
+  width: 45%;
+}
+
+section.team .about .members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+section.team .about .description {
+  color: #454545;
+  line-height: 1.5rem;
+}
+
+.members .member img {
+  border-radius: 200px;
+}
+
+.projects .project {
+  width: 100%;
+  padding: 2.4rem 12rem 2.4rem 2.2rem;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.projects .project.characters {
+  background: #594A7F url(http://inboardapp.com/images/characters.png) no-repeat right bottom;
+  background-size: contain;
+  margin-bottom: 2rem;
+}
+
+.projects .project.later {
+  background: #2569F4 url(http://inboardapp.com/images/later.png) no-repeat right bottom;
+  background-size: contain;
+}
+
+
+@media screen and (max-width: 800px) {
+  section.team .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.team .about, section.team .projects {
+    width: 100%;
+  }
+
+  section.team .about {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  section.team .projects {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.team .projects .project {
+    padding: 1rem 2rem 15rem 2rem;
+    width: 48%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .projects .project.characters {
+    background: #594A7F url(http://inboardapp.com/images/characters.png) no-repeat center bottom;
+    background-size: contain;
+  }
+
+  .projects .project.later {
+    background: #2569F4 url(http://inboardapp.com/images/later.png) no-repeat center bottom;
+    background-size: contain;
+  }
+
+
+}
+
+
+footer {
+  background-color: #f5f5f5;
+}
+
+footer .subscribe {
+  padding: 2rem 0;
+}
+
+.subscribe label {
+  display: block;
+  margin-bottom: .3rem;
+  color: #343434;
+  font-size: .6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subscribe input[type="input"], .subscribe input[type="submit"] {
+  padding: .5rem;
+  border: 1px solid #f5f5f5;
+  border-radius: 3px;
+  font-size: .8rem;
+}
+
+.subscribe input[type="input"] {
+  border: 2px solid #f5f5f5;
+  transition: all .2s ease;
+  outline: 0;
+}
+
+.subscribe input[type="submit"] {
+  cursor: pointer;
+  color: #dd3421;
+  background-color: #fff;
+  border: 2px solid #dd3421;
+  transition: all .2s ease;
+}
+
+.subscribe input[type="input"]:hover {
+  background-color: #f5f5f5;
+  border: 2px solid #787878;
+}
+
+
+.subscribe input[type="submit"]:hover {
+  color: #fff;
+  background-color: #dd3421;
+}
