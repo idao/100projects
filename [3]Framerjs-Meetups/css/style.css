@@ -4,6 +4,17 @@
   margin: 0 auto;
 }
 
+.clearfix {
+	*zoom: 1;
+}
+.clearfix:after, .clearfix:before {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
 header {
   border-bottom: 1px solid #eee;
 }
@@ -55,8 +66,26 @@ ul.nav li.trial a, ul.nav li.buy a {
 
 
 section.header {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+section.header .info {
+
+}
+
+section.header .info h2 {
+  margin-top: 0;
+  font-size: 30px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+section.header .info p {
+  line-height: 1.8;
+  letter-spacing: .8px;
 }
 
 section.header .meetups {
@@ -69,11 +98,101 @@ section.header .meetups {
 }
 
 .col-2 {
-  width: 480px;
+  max-width: 480px;
   float: left;
   margin-right: 60px;
 }
 
 [class*="col-"]:last-child {
   margin-right: 0;
+}
+
+.meetups ul > li {
+  position: relative;
+  height: 50px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.meetups li img {
+  float: left;
+  max-height: 100%;
+  margin-right: 20px;
+}
+
+.meetups li a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -25px;
+}
+.meetups li p {
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.meetups li small {
+  font-size: .8em;
+  letter-spacing: 1px;
+  line-height: 2.2;
+}
+
+.meetups li.tips {
+  height: 1px;
+  border-top: 1px solid #EEE;
+  margin-bottom: 20px;
+}
+
+.meetups li span {
+  font-size: .9em;
+  padding-right: 100px;
+}
+
+.button-line {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #00AAFF;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #00AAFF;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.gray {
+  color: #b3b3b3;
+  border-color: #bbb;
+}
+
+a.button-line:hover {
+  color: #fff;
+  background-color: #00AAFF;
+}
+
+a.gray:hover {
+  color: #fff;
+  border-color: #333;
+  background-color: #333;
+}
+
+section.gallery {
+  height: 80vh;
+  background: url(http://framerjs.com/assets/static/images/meetups/photos/nyc_3@2x.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+section.gallery .container {
+  position: relative;
+}
+
+section.gallery .container .desc {
+  position: absolute;
+  bottom: 0;
 }
