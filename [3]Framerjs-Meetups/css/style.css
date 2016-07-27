@@ -183,16 +183,38 @@ a.gray:hover {
 }
 
 section.gallery {
+  position: relative;
   height: 80vh;
   background: url(http://framerjs.com/assets/static/images/meetups/photos/nyc_3@2x.jpg) no-repeat center center;
   background-size: cover;
 }
 
-section.gallery .container {
-  position: relative;
-}
-
-section.gallery .container .desc {
+section.gallery .desc {
   position: absolute;
   bottom: 0;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  color: #fff;
+}
+
+section.gallery .container {
+  position: relative;
+  height: 200px;
+}
+
+section.gallery .container h3 {
+  position: absolute;
+  height: 200px;
+  left: 0;
+  top: 50%;
+  margin-top: -100px;
+}
+
+section.gallery .container p {
+  position: absolute;
+  height: 200px;
+  right: 0;
+  top: 50%;
+  margin-top: -100px;
 }
