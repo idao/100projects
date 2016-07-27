@@ -74,7 +74,7 @@ section.header .info {
 
 }
 
-section.header .info h2 {
+section .col-2 h2 {
   margin-top: 0;
   font-size: 30px;
   line-height: 1.6;
@@ -83,7 +83,7 @@ section.header .info h2 {
   margin-bottom: 50px;
 }
 
-section.header .info p {
+section .col-2 p {
   line-height: 1.8;
   letter-spacing: .8px;
 }
@@ -149,6 +149,7 @@ section.header .meetups {
   display: inline-block;
   font-size: .9em;
   padding-right: 100px;
+  line-height: 1.5;
 }
 
 .button-line {
@@ -199,23 +200,45 @@ section.gallery .desc {
   color: #fff;
 }
 
-section.gallery .container {
-  position: relative;
+section.gallery .container h3, section.gallery .container p {
+  display: inline-block;
   height: 200px;
-}
-
-section.gallery .container h3 {
-  position: absolute;
-  height: 200px;
-  left: 0;
-  top: 50%;
-  margin-top: -100px;
+  line-height: 200px;
 }
 
 section.gallery .container p {
-  position: absolute;
-  height: 200px;
-  right: 0;
-  top: 50%;
-  margin-top: -100px;
+  float: right;
+}
+
+
+section.topic {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+section.topic .summary{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.topic .summary .icon-block {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 16px;
+  text-align: center;
+}
+
+.icon-block img {
+  width: 32px;
+}
+
+.icon-block h3 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.icon-block p {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1;
 }
