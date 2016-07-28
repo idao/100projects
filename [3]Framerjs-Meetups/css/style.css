@@ -242,3 +242,8 @@ section.topic .summary .icon-block {
   color: #bbb;
   line-height: 1;
 }
+
+
+section.topic .signup {
+  margin: 0 auto;
+}
