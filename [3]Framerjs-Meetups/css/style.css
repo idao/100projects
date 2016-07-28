@@ -237,7 +237,7 @@ section.topic .summary .icon-block {
   margin-bottom: 0;
 }
 
-.icon-block p {
+section .icon-block p {
   font-size: 14px;
   color: #bbb;
   line-height: 1;
@@ -245,5 +245,52 @@ section.topic .summary .icon-block {
 
 
 section.topic .signup {
-  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+
+footer.footer {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  background-color: #fcfcfc;
+}
+
+footer.footer .sitemap {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.sitemap h5 {
+  margin-bottom: 10px;
+}
+
+.sitemap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.site ul li {
+  position: relative;
+}
+
+.sitemap ul li a {
+  color: #828282;
+  line-height: 1.8;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.sitemap ul li a:hover {
+  color: #000;
+  margin-left: 2px;
+  margin-right: -2px;
+}
+
+.sitemap ul li.copyright {
+  color: #bbb;
+  line-height: 3.8;
 }
