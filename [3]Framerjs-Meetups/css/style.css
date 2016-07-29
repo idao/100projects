@@ -70,10 +70,6 @@ section.header {
   padding-bottom: 6rem;
 }
 
-section.header .info {
-
-}
-
 section .col-2 h2 {
   margin-top: 0;
   font-size: 30px;
@@ -99,9 +95,11 @@ section.header .meetups {
 
 .col-2 {
   max-width: 480px;
+  width: 100%;
   float: left;
   margin-right: 60px;
 }
+
 
 [class*="col-"]:last-child {
   margin-right: 0;
@@ -141,7 +139,7 @@ section.header .meetups {
 
 .meetups li.tips {
   height: 1px;
-  border-top: 1px solid #EEE;
+  border-top: 1px solid #eee;
   margin-bottom: 20px;
 }
 
@@ -151,6 +149,28 @@ section.header .meetups {
   padding-right: 100px;
   line-height: 1.5;
 }
+
+
+@media screen and (max-width: 1020px) {
+  .col-2 {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .col-2 {
+    max-width: 800px;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+
+}
+
+
+
 
 .button-line {
   position: relative;
@@ -228,11 +248,11 @@ section.topic .summary .icon-block {
   text-align: center;
 }
 
-.icon-block img {
+section .icon-block img {
   width: 32px;
 }
 
-.icon-block h3 {
+section.icon-block h3 {
   font-weight: normal;
   margin-bottom: 0;
 }
@@ -273,15 +293,11 @@ footer.footer .sitemap {
   font-size: 13px;
 }
 
-.site ul li {
-  position: relative;
-}
-
 .sitemap ul li a {
   color: #828282;
   line-height: 1.8;
   text-decoration: none;
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 
 .sitemap ul li a:hover {
