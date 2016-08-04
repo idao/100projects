@@ -1,0 +1,27 @@
+.container {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:after, .clearfix:before {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+
+.v-middle {
+  
+}

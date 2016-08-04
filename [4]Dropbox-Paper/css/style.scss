@@ -1,0 +1,79 @@
+$blue: #007ee5;
+$blue-light: #038EFF;
+$blue-dark: #0072CF;
+
+$black: #3d464d;
+
+$gray: #7b8994;
+$gray-light: #EAEEF1;
+$gray-dark: #606F7B;
+
+$white: #fff;
+
+@import "kit";
+@import "layout";
+@import "font";
+
+
+header {
+  height: 60px;
+  border-bottom: 1px solid $gray-light;
+  text-align: center;
+}
+
+header .container {
+  position: relative;
+}
+
+header .logo {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  width: 200px;
+  background: url(https://cfl.dropboxstatic.com/static/images/notes/promo/paper-beta-logo@2x-vflPqxAlI.png) no-repeat center center;
+  background-size: 100%;
+  text-align: center;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+header .btn-line.sign-in {
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+
+
+section.index {
+  padding: 80px 0 120px 0;
+}
+
+section.index h1 {
+  color: $black;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 46px;
+  font-family: $pingfang;
+}
+
+section.index .desc {
+  color: $gray;
+  text-align: center;
+  font-weight: normal;
+  font-family: $pingfang;
+  font-size: 20px;
+}
+
+
+section.index form.register {
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+section.video {
+  height: 70vh;
+  background: url(https://cfl.dropboxstatic.com/static/images/notes/promo/video_placeholder%402x-vflHrlMeU.png) no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}

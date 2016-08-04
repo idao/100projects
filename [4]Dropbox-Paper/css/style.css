@@ -1,0 +1,126 @@
+.btn, .btn-line {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: transparent;
+  transition: all .3s ease; }
+
+.btn {
+  color: #fff;
+  border-color: #007ee5;
+  background-color: #007ee5; }
+
+.btn-line {
+  color: #007ee5;
+  border-color: #038EFF;
+  background-color: transparent; }
+
+.btn:hover {
+  color: #fff;
+  border-color: #0072CF;
+  background-color: #0072CF; }
+
+.btn-line:hover {
+  color: #fff;
+  border-color: #007ee5;
+  background-color: #007ee5; }
+
+.btn-larger {
+  font-size: 18px;
+  padding: 10px 20px; }
+
+.text-input {
+  display: inline-block;
+  outline: none;
+  border: 1px solid #7b8994;
+  color: #3d464d;
+  border-radius: 5px;
+  padding: 8px 14px;
+  width: 100%;
+  font-size: 13px;
+  box-sizing: border-box;
+  margin-right: 14px;
+  transition: all .3s ease; }
+
+.text-input:hover {
+  border-color: #038EFF;
+  box-shadow: 0 0 10px rgba(3, 142, 255, 0.3); }
+
+.text-input-larger {
+  max-width: 300px;
+  font-size: 18px;
+  padding: 10px 14px; }
+
+.container {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.float-right {
+  float: right; }
+
+/* 1 */
+header {
+  height: 60px;
+  border-bottom: 1px solid #EAEEF1;
+  text-align: center; }
+
+header .container {
+  position: relative; }
+
+header .logo {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  width: 200px;
+  background: url(https://cfl.dropboxstatic.com/static/images/notes/promo/paper-beta-logo@2x-vflPqxAlI.png) no-repeat center center;
+  background-size: 100%;
+  text-align: center;
+  text-indent: -9999px;
+  overflow: hidden; }
+
+header .btn-line.sign-in {
+  position: absolute;
+  top: 13px;
+  right: 0; }
+
+section.index {
+  padding: 80px 0 120px 0; }
+
+section.index h1 {
+  color: #3d464d;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 46px;
+  font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
+
+section.index .desc {
+  color: #7b8994;
+  text-align: center;
+  font-weight: normal;
+  font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 20px; }
+
+section.index form.register {
+  text-align: center;
+  margin-top: 60px; }
+
+section.video {
+  height: 70vh;
+  background: url(https://cfl.dropboxstatic.com/static/images/notes/promo/video_placeholder%402x-vflHrlMeU.png) no-repeat center center;
+  background-size: cover;
+  cursor: pointer; }

@@ -1,0 +1,74 @@
+.btn, .btn-line {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: transparent;
+  transition: all .3s ease;
+}
+
+.btn {
+  color: $white;
+  border-color: $blue;
+  background-color: $blue;
+}
+
+.btn-line {
+  color: $blue;
+  border-color: $blue-light;
+  background-color: transparent;
+}
+
+.btn:hover {
+  color: $white;
+  border-color: $blue-dark;
+  background-color: $blue-dark;
+}
+
+.btn-line:hover {
+  color: $white;
+  border-color: $blue;
+  background-color: $blue;
+}
+
+.btn-smaller {
+
+}
+
+.btn-larger {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.text-input {
+  display: inline-block;
+  outline: none;
+  border: 1px solid $gray;
+  color: $black;
+  border-radius: 5px;
+  padding: 8px 14px;
+  width: 100%;
+  font-size: 13px;
+  box-sizing: border-box;
+  margin-right: 14px;
+  transition: all .3s ease;
+}
+
+.text-input:hover {
+  border-color: $blue-light;
+  box-shadow: 0 0 10px rgba($blue-light,.3);
+}
+
+
+.text-input-smaller {
+
+}
+
+.text-input-larger {
+  max-width: 300px;
+  font-size: 18px;
+  padding: 10px 14px;
+}
