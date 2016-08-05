@@ -3,12 +3,17 @@ $blue-light: #038EFF;
 $blue-dark: #0072CF;
 
 $black: #3d464d;
+$black-light: #697681;
+$black-dark: #1B2126;
 
 $gray: #7b8994;
 $gray-light: #EAEEF1;
 $gray-dark: #606F7B;
 
-$white: #fff;
+$white: #FFF;
+$white-light: #fafafa;
+$white-dark: #EDF1F4;
+
 
 @import "kit";
 @import "layout";
@@ -17,15 +22,24 @@ $white: #fff;
 
 header {
   height: 60px;
-  border-bottom: 1px solid $gray-light;
+  background-color: $white;
   text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid $gray-light;
+  box-shadow: 0 0 3px $gray-light;
+  z-index: 9999;
 }
 
-header .container {
+
+
+header#header .container {
   position: relative;
 }
 
-header .logo {
+header#header .logo {
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -37,18 +51,18 @@ header .logo {
   overflow: hidden;
 }
 
-header .btn-line.sign-in {
+header#header .btn-line.sign-in {
   position: absolute;
   top: 13px;
   right: 0;
 }
 
 
-section.index {
-  padding: 80px 0 120px 0;
+section#index {
+  padding: 120px 0 120px 0;
 }
 
-section.index h1 {
+section#index h1 {
   color: $black;
   text-align: center;
   font-weight: lighter;
@@ -56,7 +70,7 @@ section.index h1 {
   font-family: $pingfang;
 }
 
-section.index .desc {
+section#index .desc {
   color: $gray;
   text-align: center;
   font-weight: normal;
@@ -65,15 +79,64 @@ section.index .desc {
 }
 
 
-section.index form.register {
+section#index form.register {
   text-align: center;
   margin-top: 60px;
 }
 
 
-section.video {
+section#video {
   height: 70vh;
   background: url(https://cfl.dropboxstatic.com/static/images/notes/promo/video_placeholder%402x-vflHrlMeU.png) no-repeat center center;
   background-size: cover;
   cursor: pointer;
+}
+
+
+section#embed, section#feedback {
+  padding: 80px 0;
+}
+
+section#embed h2, section#feedback h2 {
+  color: $gray;
+  font-weight: normal;
+  font-family: $pingfang;
+  font-size: 30px;
+}
+
+section#embed h4, section#feedback h4 {
+  margin-bottom: 10px;
+  color: $black;
+  font-weight: normal;
+  font-family: $pingfang;
+}
+
+section#embed .desc, section#feedback .desc {
+  color: $gray;
+  font-weight: lighter;
+  font-family: $pingfang;
+}
+
+section#embed h2+.desc, section#feedback h2+.desc {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+section#embed ul, section#feedback ul{
+  list-style: none;
+  padding-left: 50px;
+}
+
+section#embed ul .desc {
+
+}
+
+section#embed ul li, section#feedback ul li {
+  position: relative;
+}
+
+section#embed ul li>img, section#feedback ul li>img {
+  position: absolute;
+  left: -50px;
+  width: 23px;
 }

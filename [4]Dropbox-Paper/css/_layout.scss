@@ -2,6 +2,9 @@
   width: 960px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .clearfix {
@@ -23,5 +26,26 @@
 
 
 .v-middle {
-  
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  padding: 0 45px;
+}
+
+.column:last-child  {
+  padding-right: 0;
+}
+
+.column:first-child {
+  padding-left: 0;
+}
+
+.column img {
+  width: 100%;
 }

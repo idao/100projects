@@ -10,7 +10,7 @@
   transition: all .3s ease; }
 
 .btn {
-  color: #fff;
+  color: #FFF;
   border-color: #007ee5;
   background-color: #007ee5; }
 
@@ -20,12 +20,12 @@
   background-color: transparent; }
 
 .btn:hover {
-  color: #fff;
+  color: #FFF;
   border-color: #0072CF;
   background-color: #0072CF; }
 
 .btn-line:hover {
-  color: #fff;
+  color: #FFF;
   border-color: #007ee5;
   background-color: #007ee5; }
 
@@ -58,7 +58,10 @@
 .container {
   width: 960px;
   max-width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  box-sizing: border-box; }
 
 .clearfix {
   *zoom: 1; }
@@ -73,16 +76,39 @@
 .float-right {
   float: right; }
 
+.row {
+  display: flex;
+  justify-content: space-between; }
+
+.column {
+  padding: 0 45px; }
+
+.column:last-child {
+  padding-right: 0; }
+
+.column:first-child {
+  padding-left: 0; }
+
+.column img {
+  width: 100%; }
+
 /* 1 */
 header {
   height: 60px;
+  background-color: #FFF;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   border-bottom: 1px solid #EAEEF1;
-  text-align: center; }
+  box-shadow: 0 0 3px #EAEEF1;
+  z-index: 9999; }
 
-header .container {
+header#header .container {
   position: relative; }
 
-header .logo {
+header#header .logo {
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -93,34 +119,70 @@ header .logo {
   text-indent: -9999px;
   overflow: hidden; }
 
-header .btn-line.sign-in {
+header#header .btn-line.sign-in {
   position: absolute;
   top: 13px;
   right: 0; }
 
-section.index {
-  padding: 80px 0 120px 0; }
+section#index {
+  padding: 120px 0 120px 0; }
 
-section.index h1 {
+section#index h1 {
   color: #3d464d;
   text-align: center;
   font-weight: lighter;
   font-size: 46px;
   font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
 
-section.index .desc {
+section#index .desc {
   color: #7b8994;
   text-align: center;
   font-weight: normal;
   font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 20px; }
 
-section.index form.register {
+section#index form.register {
   text-align: center;
   margin-top: 60px; }
 
-section.video {
+section#video {
   height: 70vh;
   background: url(https://cfl.dropboxstatic.com/static/images/notes/promo/video_placeholder%402x-vflHrlMeU.png) no-repeat center center;
   background-size: cover;
   cursor: pointer; }
+
+section#embed, section#feedback {
+  padding: 80px 0; }
+
+section#embed h2, section#feedback h2 {
+  color: #7b8994;
+  font-weight: normal;
+  font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 30px; }
+
+section#embed h4, section#feedback h4 {
+  margin-bottom: 10px;
+  color: #3d464d;
+  font-weight: normal;
+  font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
+
+section#embed .desc, section#feedback .desc {
+  color: #7b8994;
+  font-weight: lighter;
+  font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
+
+section#embed h2 + .desc, section#feedback h2 + .desc {
+  font-size: 20px;
+  margin-bottom: 60px; }
+
+section#embed ul, section#feedback ul {
+  list-style: none;
+  padding-left: 50px; }
+
+section#embed ul li, section#feedback ul li {
+  position: relative; }
+
+section#embed ul li > img, section#feedback ul li > img {
+  position: absolute;
+  left: -50px;
+  width: 23px; }
