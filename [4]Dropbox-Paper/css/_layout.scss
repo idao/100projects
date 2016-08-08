@@ -35,16 +35,13 @@
 }
 
 .column {
-  padding: 0 45px;
+  margin-right: 45px;
 }
 
 .column:last-child  {
-  padding-right: 0;
+  margin-right: 0;
 }
 
-.column:first-child {
-  padding-left: 0;
-}
 
 .column img {
   width: 100%;

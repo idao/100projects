@@ -93,38 +93,48 @@ section#video {
 }
 
 
-section#embed, section#feedback {
+section#embed, section#feedback, section#idea, section#inspire {
   padding: 80px 0;
 }
 
-section#embed h2, section#feedback h2 {
-  color: $gray;
-  font-weight: normal;
-  font-family: $pingfang;
-  font-size: 30px;
+section#embed, section#feedback, section#idea, section#inspire {
+  h2 {
+    color: $gray;
+    font-weight: normal;
+    font-family: $pingfang;
+    font-size: 30px;
+  }
 }
 
-section#embed h4, section#feedback h4 {
-  margin-bottom: 10px;
-  color: $black;
-  font-weight: normal;
-  font-family: $pingfang;
+section#embed, section#feedback, section#idea, section#inspire {
+  h4 {
+    margin-bottom: 10px;
+    color: $black;
+    font-weight: normal;
+    font-family: $pingfang;
+  }
 }
 
-section#embed .desc, section#feedback .desc {
-  color: $gray;
-  font-weight: lighter;
-  font-family: $pingfang;
+section#embed, section#feedback, section#idea, section#inspire {
+  .desc {
+    color: $gray;
+    font-weight: lighter;
+    font-family: $pingfang;
+  }
 }
 
-section#embed h2+.desc, section#feedback h2+.desc {
-  font-size: 20px;
-  margin-bottom: 60px;
+section#embed, section#feedback, section#idea, section#inspire {
+  h2+.desc {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
 }
 
-section#embed ul, section#feedback ul{
-  list-style: none;
-  padding-left: 50px;
+section#embed, section#feedback {
+  ul {
+    list-style: none;
+    padding-left: 50px;
+  }
 }
 
 section#embed ul .desc {
@@ -139,4 +149,39 @@ section#embed ul li>img, section#feedback ul li>img {
   position: absolute;
   left: -50px;
   width: 23px;
+}
+
+section#idea {
+  text-align: center;
+}
+
+section#idea h2 {
+  margin-bottom: 100px;
+}
+
+section#idea img {
+  max-height: 240px;
+  width: auto;
+}
+
+section#idea .column {
+  padding: 40px;
+}
+
+
+div.divide {
+  text-indent: -9999px;
+  width: 300px;
+  border-top: 1px solid $white-dark;
+  margin: 0 auto;
+}
+
+section#inspire h2, section#inspire h2+.desc {
+  text-align: center;
+}
+
+section#inspire img {
+  max-height: 300px;
+  height: 100%;
+  width: auto;
 }
