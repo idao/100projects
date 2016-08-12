@@ -78,16 +78,34 @@
 
 .row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-left: -16px;
+  margin-right: -16px; }
 
 .column {
+  flex: 1;
+  padding: 16px;
   margin-right: 45px; }
 
 .column:last-child {
   margin-right: 0; }
 
+.column.col-2 {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.column.col-3 {
+  flex-basis: 33.333333%;
+  max-width: 33.333333%; }
+
+.column.col-offset-1 {
+  margin-right: 8.333333%; }
+
+.column.col-offset-2 {
+  margin-right: 16.666666%; }
+
 .column img {
-  width: 100%; }
+  max-width: 100%; }
 
 /* 1 */
 header {
@@ -148,16 +166,28 @@ section#video {
   background-size: cover;
   cursor: pointer; }
 
-section#embed, section#feedback, section#idea, section#inspire {
+section#embed,
+section#feedback,
+section#idea,
+section#inspire,
+section#register {
   padding: 80px 0; }
 
-section#embed h2, section#feedback h2, section#idea h2, section#inspire h2 {
+section#embed h2,
+section#feedback h2,
+section#idea h2,
+section#inspire h2,
+section#register h2 {
   color: #7b8994;
   font-weight: normal;
   font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 30px; }
 
-section#embed h4, section#feedback h4, section#idea h4, section#inspire h4 {
+section#embed h4,
+section#feedback h4,
+section#idea h4,
+section#inspire h4,
+section#register h4 {
   margin-bottom: 10px;
   color: #3d464d;
   font-weight: normal;
@@ -184,18 +214,13 @@ section#embed ul li > img, section#feedback ul li > img {
   left: -50px;
   width: 23px; }
 
-section#idea {
+section#idea,
+section#inspire,
+section#register {
   text-align: center; }
 
 section#idea h2 {
   margin-bottom: 100px; }
-
-section#idea img {
-  max-height: 240px;
-  width: auto; }
-
-section#idea .column {
-  padding: 40px; }
 
 div.divide {
   text-indent: -9999px;
@@ -203,10 +228,19 @@ div.divide {
   border-top: 1px solid #EDF1F4;
   margin: 0 auto; }
 
-section#inspire h2, section#inspire h2 + .desc {
-  text-align: center; }
+section#register h4 {
+  margin-bottom: 30px; }
 
-section#inspire img {
-  max-height: 300px;
-  height: 100%;
-  width: auto; }
+footer {
+  height: 60px;
+  line-height: 60px;
+  font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-weight: 200;
+  font-size: 14px; }
+
+footer a {
+  text-decoration: none;
+  color: #038EFF; }
+  footer a:hover {
+    text-decoration: underline;
+    color: #007ee5; }

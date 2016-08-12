@@ -93,11 +93,19 @@ section#video {
 }
 
 
-section#embed, section#feedback, section#idea, section#inspire {
+section#embed,
+section#feedback,
+section#idea,
+section#inspire,
+section#register {
   padding: 80px 0;
 }
 
-section#embed, section#feedback, section#idea, section#inspire {
+section#embed,
+section#feedback,
+section#idea,
+section#inspire,
+section#register {
   h2 {
     color: $gray;
     font-weight: normal;
@@ -106,7 +114,11 @@ section#embed, section#feedback, section#idea, section#inspire {
   }
 }
 
-section#embed, section#feedback, section#idea, section#inspire {
+section#embed,
+section#feedback,
+section#idea,
+section#inspire,
+section#register {
   h4 {
     margin-bottom: 10px;
     color: $black;
@@ -151,21 +163,14 @@ section#embed ul li>img, section#feedback ul li>img {
   width: 23px;
 }
 
-section#idea {
+section#idea,
+section#inspire,
+section#register {
   text-align: center;
 }
 
 section#idea h2 {
   margin-bottom: 100px;
-}
-
-section#idea img {
-  max-height: 240px;
-  width: auto;
-}
-
-section#idea .column {
-  padding: 40px;
 }
 
 
@@ -176,12 +181,24 @@ div.divide {
   margin: 0 auto;
 }
 
-section#inspire h2, section#inspire h2+.desc {
-  text-align: center;
+
+section#register h4 {
+  margin-bottom: 30px;
 }
 
-section#inspire img {
-  max-height: 300px;
-  height: 100%;
-  width: auto;
+footer {
+  height: 60px;
+  line-height: 60px;
+  font-family: $pingfang;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: $blue-light;
+  &:hover {
+    text-decoration: underline;
+    color: $blue;
+  }
 }

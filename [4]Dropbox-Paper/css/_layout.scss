@@ -32,9 +32,13 @@
 .row {
   display: flex;
   justify-content: space-between;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 
 .column {
+  flex: 1;
+  padding: 16px;
   margin-right: 45px;
 }
 
@@ -42,7 +46,24 @@
   margin-right: 0;
 }
 
+.column.col-2 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.column.col-3 {
+  flex-basis: 33.333333%;
+  max-width: 33.333333%;
+}
+
+.column.col-offset-1 {
+  margin-right: 8.333333%;
+}
+
+.column.col-offset-2 {
+  margin-right: 16.666666%;
+}
 
 .column img {
-  width: 100%;
+  max-width: 100%;
 }
