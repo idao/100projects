@@ -1,0 +1,19 @@
+a {
+  display: inline-block;
+  color: $brand;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+          transition: all .2s ease;
+
+  &:hover, &:active {
+    color: $brand-dark;
+  }
+}
+
+
+input[type='text'],
+input[type='password'],
+input[type='textarea'] {
+  outline:none;
+}

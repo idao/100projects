@@ -1,0 +1,115 @@
+@import "brand";
+@import "layout";
+@import "detail";
+@import "icon";
+@import "kit";
+
+header#header {
+  background-color: #fff;
+  font-size: 14px;
+  z-index: 10000;
+}
+
+header#header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header#header ul>li {
+  display: inline-block;
+  float: left;
+  margin-right: 2rem;
+}
+
+header#header .header-top {
+  height: 100px;
+  border-bottom: 1px solid $gray-light;
+}
+
+header#header .header-top a {
+  color: $gray;
+}
+
+header#header .header-top a:hover,
+header#header .header-top a:active,
+header#header .header-top li.is--selected>a {
+  color: $black;
+}
+
+.header-top .logo,
+.header-top .menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-top .logo {
+  width: 120px;
+  height: 60px;
+  margin-right: 2rem;
+}
+
+.header-top .logo a {
+  display: block;
+  text-indent: -999999px;
+  overflow: hidden;
+  background: url("http://www-static.operacdn.com/static-heap/28/2820d98042080cc51dea518980d80293bf732770/logo-header-opera.png") no-repeat left center;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+}
+
+header#header .header-bottom {
+  border-bottom: 1px solid $gray-light;
+}
+
+.header-bottom ul.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.header-bottom ul.menu>li>a {
+  display: inline-block;
+  padding: .5rem 0;
+  color: $gray;
+}
+
+.header-bottom ul.menu>li>a:hover,
+.header-bottom ul.menu>li>a:active,
+.header-bottom ul.menu>li.is--selected>a {
+  color: $black;
+  border-bottom: 2px solid $black;
+}
+
+section#title {
+  padding: 6rem 0;
+  background: url("http://www-static.operacdn.com/static-heap/c2/c2ea85f42f2fa2b1a1f08f8e1415c3259df35e64/beta-page-background-mesh.png") no-repeat center center;
+  background-size: cover;
+}
+
+
+section#download .opera-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.opera-icon img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.opera-icon h3 {
+  font-size: 24px;
+}
+
+
+section#version {
+  margin-top: 60px;
+}
+
+section#version .container {
+  border-top: 1px solid $gray-light;
+  padding: 60px 0;
+}

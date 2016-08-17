@@ -1,0 +1,306 @@
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+// Import the fonts
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../font/glyphicons-halflings-regular.eot');
+  src: url('../font/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+       url('../font/glyphicons-halflings-regular.woff2') format('woff2'),
+       url('../font/glyphicons-halflings-regular.woff') format('woff'),
+       url('../font/glyphicons-halflings-regular.ttf') format('truetype'),
+       url('../font/glyphicons-halflings-regular.svg#@{icon-font-svg-id}') format('svg');
+}
+
+// Catchall baseclass
+.icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 4px;
+}
+
+// Individual icons
+.icon-asterisk               { &:before { content: "\2a"; } }
+.icon-plus                   { &:before { content: "\2b"; } }
+.icon-euro,
+.icon-eur                    { &:before { content: "\20ac"; } }
+.icon-minus                  { &:before { content: "\2212"; } }
+.icon-cloud                  { &:before { content: "\2601"; } }
+.icon-envelope               { &:before { content: "\2709"; } }
+.icon-pencil                 { &:before { content: "\270f"; } }
+.icon-glass                  { &:before { content: "\e001"; } }
+.icon-music                  { &:before { content: "\e002"; } }
+.icon-search                 { &:before { content: "\e003"; } }
+.icon-heart                  { &:before { content: "\e005"; } }
+.icon-star                   { &:before { content: "\e006"; } }
+.icon-star-empty             { &:before { content: "\e007"; } }
+.icon-user                   { &:before { content: "\e008"; } }
+.icon-film                   { &:before { content: "\e009"; } }
+.icon-th-large               { &:before { content: "\e010"; } }
+.icon-th                     { &:before { content: "\e011"; } }
+.icon-th-list                { &:before { content: "\e012"; } }
+.icon-ok                     { &:before { content: "\e013"; } }
+.icon-remove                 { &:before { content: "\e014"; } }
+.icon-zoom-in                { &:before { content: "\e015"; } }
+.icon-zoom-out               { &:before { content: "\e016"; } }
+.icon-off                    { &:before { content: "\e017"; } }
+.icon-signal                 { &:before { content: "\e018"; } }
+.icon-cog                    { &:before { content: "\e019"; } }
+.icon-trash                  { &:before { content: "\e020"; } }
+.icon-home                   { &:before { content: "\e021"; } }
+.icon-file                   { &:before { content: "\e022"; } }
+.icon-time                   { &:before { content: "\e023"; } }
+.icon-road                   { &:before { content: "\e024"; } }
+.icon-download-alt           { &:before { content: "\e025"; } }
+.icon-download               { &:before { content: "\e026"; } }
+.icon-upload                 { &:before { content: "\e027"; } }
+.icon-inbox                  { &:before { content: "\e028"; } }
+.icon-play-circle            { &:before { content: "\e029"; } }
+.icon-repeat                 { &:before { content: "\e030"; } }
+.icon-refresh                { &:before { content: "\e031"; } }
+.icon-list-alt               { &:before { content: "\e032"; } }
+.icon-lock                   { &:before { content: "\e033"; } }
+.icon-flag                   { &:before { content: "\e034"; } }
+.icon-headphones             { &:before { content: "\e035"; } }
+.icon-volume-off             { &:before { content: "\e036"; } }
+.icon-volume-down            { &:before { content: "\e037"; } }
+.icon-volume-up              { &:before { content: "\e038"; } }
+.icon-qrcode                 { &:before { content: "\e039"; } }
+.icon-barcode                { &:before { content: "\e040"; } }
+.icon-tag                    { &:before { content: "\e041"; } }
+.icon-tags                   { &:before { content: "\e042"; } }
+.icon-book                   { &:before { content: "\e043"; } }
+.icon-bookmark               { &:before { content: "\e044"; } }
+.icon-print                  { &:before { content: "\e045"; } }
+.icon-camera                 { &:before { content: "\e046"; } }
+.icon-font                   { &:before { content: "\e047"; } }
+.icon-bold                   { &:before { content: "\e048"; } }
+.icon-italic                 { &:before { content: "\e049"; } }
+.icon-text-height            { &:before { content: "\e050"; } }
+.icon-text-width             { &:before { content: "\e051"; } }
+.icon-align-left             { &:before { content: "\e052"; } }
+.icon-align-center           { &:before { content: "\e053"; } }
+.icon-align-right            { &:before { content: "\e054"; } }
+.icon-align-justify          { &:before { content: "\e055"; } }
+.icon-list                   { &:before { content: "\e056"; } }
+.icon-indent-left            { &:before { content: "\e057"; } }
+.icon-indent-right           { &:before { content: "\e058"; } }
+.icon-facetime-video         { &:before { content: "\e059"; } }
+.icon-picture                { &:before { content: "\e060"; } }
+.icon-map-marker             { &:before { content: "\e062"; } }
+.icon-adjust                 { &:before { content: "\e063"; } }
+.icon-tint                   { &:before { content: "\e064"; } }
+.icon-edit                   { &:before { content: "\e065"; } }
+.icon-share                  { &:before { content: "\e066"; } }
+.icon-check                  { &:before { content: "\e067"; } }
+.icon-move                   { &:before { content: "\e068"; } }
+.icon-step-backward          { &:before { content: "\e069"; } }
+.icon-fast-backward          { &:before { content: "\e070"; } }
+.icon-backward               { &:before { content: "\e071"; } }
+.icon-play                   { &:before { content: "\e072"; } }
+.icon-pause                  { &:before { content: "\e073"; } }
+.icon-stop                   { &:before { content: "\e074"; } }
+.icon-forward                { &:before { content: "\e075"; } }
+.icon-fast-forward           { &:before { content: "\e076"; } }
+.icon-step-forward           { &:before { content: "\e077"; } }
+.icon-eject                  { &:before { content: "\e078"; } }
+.icon-chevron-left           { &:before { content: "\e079"; } }
+.icon-chevron-right          { &:before { content: "\e080"; } }
+.icon-plus-sign              { &:before { content: "\e081"; } }
+.icon-minus-sign             { &:before { content: "\e082"; } }
+.icon-remove-sign            { &:before { content: "\e083"; } }
+.icon-ok-sign                { &:before { content: "\e084"; } }
+.icon-question-sign          { &:before { content: "\e085"; } }
+.icon-info-sign              { &:before { content: "\e086"; } }
+.icon-screenshot             { &:before { content: "\e087"; } }
+.icon-remove-circle          { &:before { content: "\e088"; } }
+.icon-ok-circle              { &:before { content: "\e089"; } }
+.icon-ban-circle             { &:before { content: "\e090"; } }
+.icon-arrow-left             { &:before { content: "\e091"; } }
+.icon-arrow-right            { &:before { content: "\e092"; } }
+.icon-arrow-up               { &:before { content: "\e093"; } }
+.icon-arrow-down             { &:before { content: "\e094"; } }
+.icon-share-alt              { &:before { content: "\e095"; } }
+.icon-resize-full            { &:before { content: "\e096"; } }
+.icon-resize-small           { &:before { content: "\e097"; } }
+.icon-exclamation-sign       { &:before { content: "\e101"; } }
+.icon-gift                   { &:before { content: "\e102"; } }
+.icon-leaf                   { &:before { content: "\e103"; } }
+.icon-fire                   { &:before { content: "\e104"; } }
+.icon-eye-open               { &:before { content: "\e105"; } }
+.icon-eye-close              { &:before { content: "\e106"; } }
+.icon-warning-sign           { &:before { content: "\e107"; } }
+.icon-plane                  { &:before { content: "\e108"; } }
+.icon-calendar               { &:before { content: "\e109"; } }
+.icon-random                 { &:before { content: "\e110"; } }
+.icon-comment                { &:before { content: "\e111"; } }
+.icon-magnet                 { &:before { content: "\e112"; } }
+.icon-chevron-up             { &:before { content: "\e113"; } }
+.icon-chevron-down           { &:before { content: "\e114"; } }
+.icon-retweet                { &:before { content: "\e115"; } }
+.icon-shopping-cart          { &:before { content: "\e116"; } }
+.icon-folder-close           { &:before { content: "\e117"; } }
+.icon-folder-open            { &:before { content: "\e118"; } }
+.icon-resize-vertical        { &:before { content: "\e119"; } }
+.icon-resize-horizontal      { &:before { content: "\e120"; } }
+.icon-hdd                    { &:before { content: "\e121"; } }
+.icon-bullhorn               { &:before { content: "\e122"; } }
+.icon-bell                   { &:before { content: "\e123"; } }
+.icon-certificate            { &:before { content: "\e124"; } }
+.icon-thumbs-up              { &:before { content: "\e125"; } }
+.icon-thumbs-down            { &:before { content: "\e126"; } }
+.icon-hand-right             { &:before { content: "\e127"; } }
+.icon-hand-left              { &:before { content: "\e128"; } }
+.icon-hand-up                { &:before { content: "\e129"; } }
+.icon-hand-down              { &:before { content: "\e130"; } }
+.icon-circle-arrow-right     { &:before { content: "\e131"; } }
+.icon-circle-arrow-left      { &:before { content: "\e132"; } }
+.icon-circle-arrow-up        { &:before { content: "\e133"; } }
+.icon-circle-arrow-down      { &:before { content: "\e134"; } }
+.icon-globe                  { &:before { content: "\e135"; } }
+.icon-wrench                 { &:before { content: "\e136"; } }
+.icon-tasks                  { &:before { content: "\e137"; } }
+.icon-filter                 { &:before { content: "\e138"; } }
+.icon-briefcase              { &:before { content: "\e139"; } }
+.icon-fullscreen             { &:before { content: "\e140"; } }
+.icon-dashboard              { &:before { content: "\e141"; } }
+.icon-paperclip              { &:before { content: "\e142"; } }
+.icon-heart-empty            { &:before { content: "\e143"; } }
+.icon-link                   { &:before { content: "\e144"; } }
+.icon-phone                  { &:before { content: "\e145"; } }
+.icon-pushpin                { &:before { content: "\e146"; } }
+.icon-usd                    { &:before { content: "\e148"; } }
+.icon-gbp                    { &:before { content: "\e149"; } }
+.icon-sort                   { &:before { content: "\e150"; } }
+.icon-sort-by-alphabet       { &:before { content: "\e151"; } }
+.icon-sort-by-alphabet-alt   { &:before { content: "\e152"; } }
+.icon-sort-by-order          { &:before { content: "\e153"; } }
+.icon-sort-by-order-alt      { &:before { content: "\e154"; } }
+.icon-sort-by-attributes     { &:before { content: "\e155"; } }
+.icon-sort-by-attributes-alt { &:before { content: "\e156"; } }
+.icon-unchecked              { &:before { content: "\e157"; } }
+.icon-expand                 { &:before { content: "\e158"; } }
+.icon-collapse-down          { &:before { content: "\e159"; } }
+.icon-collapse-up            { &:before { content: "\e160"; } }
+.icon-log-in                 { &:before { content: "\e161"; } }
+.icon-flash                  { &:before { content: "\e162"; } }
+.icon-log-out                { &:before { content: "\e163"; } }
+.icon-new-window             { &:before { content: "\e164"; } }
+.icon-record                 { &:before { content: "\e165"; } }
+.icon-save                   { &:before { content: "\e166"; } }
+.icon-open                   { &:before { content: "\e167"; } }
+.icon-saved                  { &:before { content: "\e168"; } }
+.icon-import                 { &:before { content: "\e169"; } }
+.icon-export                 { &:before { content: "\e170"; } }
+.icon-send                   { &:before { content: "\e171"; } }
+.icon-floppy-disk            { &:before { content: "\e172"; } }
+.icon-floppy-saved           { &:before { content: "\e173"; } }
+.icon-floppy-remove          { &:before { content: "\e174"; } }
+.icon-floppy-save            { &:before { content: "\e175"; } }
+.icon-floppy-open            { &:before { content: "\e176"; } }
+.icon-credit-card            { &:before { content: "\e177"; } }
+.icon-transfer               { &:before { content: "\e178"; } }
+.icon-cutlery                { &:before { content: "\e179"; } }
+.icon-header                 { &:before { content: "\e180"; } }
+.icon-compressed             { &:before { content: "\e181"; } }
+.icon-earphone               { &:before { content: "\e182"; } }
+.icon-phone-alt              { &:before { content: "\e183"; } }
+.icon-tower                  { &:before { content: "\e184"; } }
+.icon-stats                  { &:before { content: "\e185"; } }
+.icon-sd-video               { &:before { content: "\e186"; } }
+.icon-hd-video               { &:before { content: "\e187"; } }
+.icon-subtitles              { &:before { content: "\e188"; } }
+.icon-sound-stereo           { &:before { content: "\e189"; } }
+.icon-sound-dolby            { &:before { content: "\e190"; } }
+.icon-sound-5-1              { &:before { content: "\e191"; } }
+.icon-sound-6-1              { &:before { content: "\e192"; } }
+.icon-sound-7-1              { &:before { content: "\e193"; } }
+.icon-copyright-mark         { &:before { content: "\e194"; } }
+.icon-registration-mark      { &:before { content: "\e195"; } }
+.icon-cloud-download         { &:before { content: "\e197"; } }
+.icon-cloud-upload           { &:before { content: "\e198"; } }
+.icon-tree-conifer           { &:before { content: "\e199"; } }
+.icon-tree-deciduous         { &:before { content: "\e200"; } }
+.icon-cd                     { &:before { content: "\e201"; } }
+.icon-save-file              { &:before { content: "\e202"; } }
+.icon-open-file              { &:before { content: "\e203"; } }
+.icon-level-up               { &:before { content: "\e204"; } }
+.icon-copy                   { &:before { content: "\e205"; } }
+.icon-paste                  { &:before { content: "\e206"; } }
+// The following 2 Glyphicons are omitted for the time being because
+// they currently use Unicode codepoints that are outside the
+// Basic Multilingual Plane (BMP). Older buggy versions of WebKit can't handle
+// non-BMP codepoints in CSS string escapes, and thus can't display these two icons.
+// Notably, the bug affects some older versions of the Android Browser.
+// More info: https://github.com/twbs/bootstrap/issues/10106
+// .icon-door                   { &:before { content: "\1f6aa"; } }
+// .icon-key                    { &:before { content: "\1f511"; } }
+.icon-alert                  { &:before { content: "\e209"; } }
+.icon-equalizer              { &:before { content: "\e210"; } }
+.icon-king                   { &:before { content: "\e211"; } }
+.icon-queen                  { &:before { content: "\e212"; } }
+.icon-pawn                   { &:before { content: "\e213"; } }
+.icon-bishop                 { &:before { content: "\e214"; } }
+.icon-knight                 { &:before { content: "\e215"; } }
+.icon-baby-formula           { &:before { content: "\e216"; } }
+.icon-tent                   { &:before { content: "\26fa"; } }
+.icon-blackboard             { &:before { content: "\e218"; } }
+.icon-bed                    { &:before { content: "\e219"; } }
+.icon-apple                  { &:before { content: "\f8ff"; } }
+.icon-erase                  { &:before { content: "\e221"; } }
+.icon-hourglass              { &:before { content: "\231b"; } }
+.icon-lamp                   { &:before { content: "\e223"; } }
+.icon-duplicate              { &:before { content: "\e224"; } }
+.icon-piggy-bank             { &:before { content: "\e225"; } }
+.icon-scissors               { &:before { content: "\e226"; } }
+.icon-bitcoin                { &:before { content: "\e227"; } }
+.icon-btc                    { &:before { content: "\e227"; } }
+.icon-xbt                    { &:before { content: "\e227"; } }
+.icon-yen                    { &:before { content: "\00a5"; } }
+.icon-jpy                    { &:before { content: "\00a5"; } }
+.icon-ruble                  { &:before { content: "\20bd"; } }
+.icon-rub                    { &:before { content: "\20bd"; } }
+.icon-scale                  { &:before { content: "\e230"; } }
+.icon-ice-lolly              { &:before { content: "\e231"; } }
+.icon-ice-lolly-tasted       { &:before { content: "\e232"; } }
+.icon-education              { &:before { content: "\e233"; } }
+.icon-option-horizontal      { &:before { content: "\e234"; } }
+.icon-option-vertical        { &:before { content: "\e235"; } }
+.icon-menu-hamburger         { &:before { content: "\e236"; } }
+.icon-modal-window           { &:before { content: "\e237"; } }
+.icon-oil                    { &:before { content: "\e238"; } }
+.icon-grain                  { &:before { content: "\e239"; } }
+.icon-sunglasses             { &:before { content: "\e240"; } }
+.icon-text-size              { &:before { content: "\e241"; } }
+.icon-text-color             { &:before { content: "\e242"; } }
+.icon-text-background        { &:before { content: "\e243"; } }
+.icon-object-align-top       { &:before { content: "\e244"; } }
+.icon-object-align-bottom    { &:before { content: "\e245"; } }
+.icon-object-align-horizontal{ &:before { content: "\e246"; } }
+.icon-object-align-left      { &:before { content: "\e247"; } }
+.icon-object-align-vertical  { &:before { content: "\e248"; } }
+.icon-object-align-right     { &:before { content: "\e249"; } }
+.icon-triangle-right         { &:before { content: "\e250"; } }
+.icon-triangle-left          { &:before { content: "\e251"; } }
+.icon-triangle-bottom        { &:before { content: "\e252"; } }
+.icon-triangle-top           { &:before { content: "\e253"; } }
+.icon-console                { &:before { content: "\e254"; } }
+.icon-superscript            { &:before { content: "\e255"; } }
+.icon-subscript              { &:before { content: "\e256"; } }
+.icon-menu-left              { &:before { content: "\e257"; } }
+.icon-menu-right             { &:before { content: "\e258"; } }
+.icon-menu-down              { &:before { content: "\e259"; } }
+.icon-menu-up                { &:before { content: "\e260"; } }
