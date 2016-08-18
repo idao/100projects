@@ -37,17 +37,23 @@
 .row {
   display: flex;
   justify-content: space-between;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
+.row.loop-wrap {
+  flex-wrap: wrap;
+}
 
 .column {
   //display: inline-block;
   flex: 1;
-  padding: 0;
-  margin-right: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  //margin-right: 1rem;
 }
 
-.column:last-child { margin-right: 0; }
+//.column:last-child { margin-right: 0; }
 
 // 宽度: 1/12
 .column.col-1 {
@@ -86,31 +92,31 @@
 }
 
 // 宽度: 7/12
-.column.col-6 {
+.column.col-7 {
   flex-basis: 58.888889%;
   max-width: 58.888889%;
 }
 
 // 宽度: 2/3
-.column.col-7 {
+.column.col-8 {
   flex-basis: 66.666667%;
   max-width: 66.666667%;
 }
 
 // 宽度: 3/4
-.column.col-8 {
+.column.col-9 {
   flex-basis: 75%;
   max-width: 75%;
 }
 
 // 宽度: 5/6
-.column.col-9 {
+.column.col-10 {
   flex-basis: 83.333333%;
   max-width: 83.333333%;
 }
 
 // 宽度: 11/12
-.column.col-10 {
+.column.col-11 {
   flex-basis: 91.666667%;
   max-width: 91.666667%;
 }
@@ -136,6 +142,7 @@
 .col-offset-4 {
   margin-left: 33.333333%;
 }
+
 
 
 /*
