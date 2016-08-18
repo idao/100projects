@@ -10,16 +10,18 @@ header#header {
   z-index: 10000;
 }
 
-header#header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header#header ul>li {
-  display: inline-block;
-  float: left;
-  margin-right: 2rem;
+header#header {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    margin: 0 1rem;
+  }
+  ul li:last-child {
+    margin-right: 0;
+  }
 }
 
 header#header .header-top {
@@ -37,27 +39,39 @@ header#header .header-top li.is--selected>a {
   color: $black;
 }
 
-.header-top .logo,
-.header-top .menu {
+
+.header-top .menu--start .logo>a {
   display: inline-block;
-  vertical-align: middle;
-}
-
-.header-top .logo {
-  width: 120px;
-  height: 60px;
-  margin-right: 2rem;
-}
-
-.header-top .logo a {
-  display: block;
   text-indent: -999999px;
   overflow: hidden;
   background: url("http://www-static.operacdn.com/static-heap/28/2820d98042080cc51dea518980d80293bf732770/logo-header-opera.png") no-repeat left center;
-  background-size: contain;
-  width: inherit;
-  height: inherit;
+  background-size: 100%;
+  width: 120px;
+  height: 80px;
 }
+
+
+.navigation {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+
+.header-top {
+  ul.menu--start,
+  ul.menu--end {
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  ul.menu--end {
+    justify-content: flex-end;
+  }
+}
+
+
 
 header#header .header-bottom {
   border-bottom: 1px solid $gray-light;
@@ -122,4 +136,18 @@ section#description {
 
 section#download-again {
   padding: 3rem 0;
+}
+
+footer#footer {
+  padding: 3rem 0;
+  background-color: $black-light;
+  font-size: 13px;
+}
+
+footer#footer .block h5 {
+  margin: 16px 0;
+}
+
+footer#footer .block a {
+  display: block;
 }
