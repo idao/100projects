@@ -1,0 +1,17 @@
+// 品牌色
+$brand: #3EC3D4 !default;
+$brand-light: lighten($brand,12%);
+$brand-dark: darken($brand,12%);
+
+// 灰阶色
+$black: #3D464D;
+$black-light: #697681;
+$black-dark: #1B2126;
+
+$gray: #7B8994;
+$gray-light: #EAEEF1;
+$gray-dark: #606F7B;
+
+$white: #FFF;
+$white-light: #FAFAFA;
+$white-dark: #EDF1F4;

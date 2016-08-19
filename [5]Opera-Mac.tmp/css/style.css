@@ -1,0 +1,377 @@
+@charset "UTF-8";
+@import url(font-awesome.css);
+@import url(normalize.css);
+/*
+* ----------
+* border-box
+* ----------
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+* ----------
+* 容器
+* ----------
+*/
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%; }
+
+/*
+* ----------
+* 网格系统
+* ----------
+*/
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+.row.loop-wrap {
+  flex-wrap: wrap; }
+
+.column {
+  flex: 1;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.column.col-1 {
+  flex-basis: 8.333333%;
+  max-width: 8.333333%; }
+
+.column.col-2 {
+  flex-basis: 16.666667%;
+  max-width: 16.666667%; }
+
+.column.col-3 {
+  flex-basis: 25%;
+  max-width: 25%; }
+
+.column.col-4 {
+  flex-basis: 33.333333%;
+  max-width: 33.333333%; }
+
+.column.col-5 {
+  flex-basis: 41.666667%;
+  max-width: 41.666667%; }
+
+.column.col-6 {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.column.col-7 {
+  flex-basis: 58.888889%;
+  max-width: 58.888889%; }
+
+.column.col-8 {
+  flex-basis: 66.666667%;
+  max-width: 66.666667%; }
+
+.column.col-9 {
+  flex-basis: 75%;
+  max-width: 75%; }
+
+.column.col-10 {
+  flex-basis: 83.333333%;
+  max-width: 83.333333%; }
+
+.column.col-11 {
+  flex-basis: 91.666667%;
+  max-width: 91.666667%; }
+
+.col-offset-1 {
+  margin-left: 8.333333%; }
+
+.col-offset-2 {
+  margin-left: 16.666667%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.333333%; }
+
+/*
+* ---------
+* block 浮动布局
+* ---------
+*/
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+* --------
+* inline 文本排版
+* --------
+*/
+.align-right {
+  text-align: right; }
+
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+/*
+* --------
+* 垂直居中
+* --------
+*/
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.vertical-middle {
+  vertical-align: middle; }
+
+/*
+* --------
+* 媒体类型
+* --------
+*/
+.media {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.media.media-right {
+  display: flex;
+  flex-direction: column; }
+
+/*
+* ----------
+* A标签适当的动画属性
+* ----------
+*/
+a {
+  display: inline-block;
+  color: #3EC3D4;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease; }
+  a:hover, a:active {
+    color: #279fae; }
+
+input[type='text'],
+input[type='password'],
+input[type='textarea'] {
+  outline: none; }
+
+/*
+* ----------
+* 图片:响应式
+* ----------
+*/
+img {
+  border: none;
+  max-width: 100%; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/*
+* ----------
+* 视频:响应式
+* ----------
+*/
+.video-responsive {
+  position: relative;
+  height: 0;
+  padding-top: 3rem;
+  padding-bottom: 56.25%;
+  overflow: hidden; }
+  .video-responsive iframe, .video-responsive object, .video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .video-responsive video {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
+
+/*
+* 按钮的一种类型
+*
+*  1. <a class="btn">按钮</a>
+*  2. <button>按钮</button>
+*  3. <input type="submit" value="按钮" />
+*
+*/
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #279fae;
+  border-radius: 4px;
+  background-color: #3EC3D4;
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease; }
+  .button:hover, .button:active,
+  button:hover,
+  button:active,
+  input[type='button']:hover,
+  input[type='button']:active,
+  input[type='reset']:hover,
+  input[type='reset']:active,
+  input[type='submit']:hover,
+  input[type='submit']:active {
+    background-color: #279fae;
+    color: #FFF; }
+
+.button.btn-outline {
+  border-color: #3EC3D4;
+  background-color: transparent;
+  color: #3EC3D4; }
+  .button.btn-outline:hover {
+    border-color: transparent;
+    background-color: #3EC3D4;
+    color: #FFF; }
+
+.button.btn-blank {
+  border: none;
+  background-color: #FFF;
+  color: #3EC3D4; }
+  .button.btn-blank:hover, .button.btn-blank:active {
+    color: #279fae;
+    background-color: #FAFAFA; }
+
+.button.is--disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: .5; }
+
+header#header {
+  background-color: #fff;
+  font-size: 14px;
+  z-index: 10000; }
+
+header#header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+header#header ul li {
+  margin: 0 1rem; }
+header#header ul li:last-child {
+  margin-right: 0; }
+
+header#header .header-top {
+  height: 100px;
+  border-bottom: 1px solid #EAEEF1; }
+
+header#header .header-top a {
+  color: #7B8994; }
+
+header#header .header-top a:hover,
+header#header .header-top a:active,
+header#header .header-top li.is--selected > a {
+  color: #3D464D; }
+
+.header-top .menu--start .logo > a {
+  display: inline-block;
+  text-indent: -999999px;
+  overflow: hidden;
+  background: url("http://www-static.operacdn.com/static-heap/28/2820d98042080cc51dea518980d80293bf732770/logo-header-opera.png") no-repeat left center;
+  background-size: 100%;
+  width: 120px;
+  height: 80px; }
+
+.navigation {
+  height: 100px;
+  display: flex;
+  align-items: center; }
+
+.header-top ul.menu--start,
+.header-top ul.menu--end {
+  height: inherit;
+  display: flex;
+  align-items: center; }
+.header-top ul.menu--end {
+  justify-content: flex-end; }
+
+header#header .header-bottom {
+  border-bottom: 1px solid #EAEEF1; }
+
+.header-bottom ul.menu {
+  display: flex;
+  justify-content: center; }
+
+.header-bottom ul.menu > li > a {
+  display: inline-block;
+  padding: .5rem 0;
+  color: #7B8994; }
+
+.header-bottom ul.menu > li > a:hover,
+.header-bottom ul.menu > li > a:active,
+.header-bottom ul.menu > li.is--selected > a {
+  color: #3D464D;
+  border-bottom: 2px solid #3D464D; }
+
+section#cover {
+  padding: 5rem 0; }
+
+.download-desc img {
+  width: 80px; }
+
+section#desc1 {
+  padding: 6rem 0;
+  margin: 6rem 0;
+  background-color: #EAEEF1; }
+
+section#desc1 .row {
+  padding: 3rem 0; }
+
+section#desc2 {
+  margin: 6rem 0; }
+
+section#desc2 .row {
+  padding: 3rem 0; }
+
+footer#footer {
+  padding: 3rem 0;
+  background-color: #697681;
+  font-size: 13px; }
+
+footer#footer .block h5 {
+  margin: 16px 0; }
+
+footer#footer .block a {
+  display: block; }
