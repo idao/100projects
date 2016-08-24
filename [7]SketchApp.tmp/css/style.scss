@@ -1,0 +1,126 @@
+// 第三方CSS库
+@import "font-awesome.css";
+@import "normalize.css";
+
+// 自定义库
+@import "color";
+@import "layout";
+@import "detail";
+@import "kit";
+
+
+
+header#header {
+  border-bottom: 1px solid rgba($gray-dark,.18);
+  background-color: #061524;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+header#header a {
+  font-size: 14px;
+  color: $black-light;
+  &:hover {
+    color: $white;
+  }
+}
+
+header#header .logo a {
+  font-size: 18px;
+  color: $white;
+  &:hover {
+    color: $white-light;
+  }
+}
+
+
+
+body>section {
+  padding: 40px 0;
+  &:nth-of-type(odd) {
+  //background-color: $gray-light;
+  }
+}
+
+
+section#index {
+  background-color: #061524;
+  h1 {
+    font-size: 50px;
+    color: $white;
+    font-weight: lighter;
+  }
+  p {
+    color: $gray-light;
+    font-weight: lighter;
+    padding: 20px 50px;
+  }
+  a {
+    color: $gray-light;
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+  span {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .download {
+    a {
+      font-size: 13px;
+      margin: 0 16px;
+    }
+    a.button {
+      background-color: $brand;
+      &:hover {
+        color: $white;
+        background-color: $brand-dark;
+      }
+    }
+    a.button.btn-outline {
+      border-color: $brand;
+      background-color: transparent;
+      &:hover {
+        color: $white;
+        background-color: rgba($brand,.1);
+      }
+    }
+    p {
+      font-size: 12px;
+      color: $gray-dark;
+    }
+  }
+}
+
+section#why {
+  img {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  padding-bottom: 0;
+}
+
+section#who {
+  blockquote a {
+    display: inline-block;
+    color: $brand;
+    &>img {
+      width: 30px;
+      height: auto;
+      border-radius: 30px;
+      vertical-align: middle;
+    }
+    &:hover {
+      color: $brand-dark;
+    }
+  }
+  blockquote footer {
+    margin-top: 20px;
+  }
+
+  .company-list img {
+    margin: 20px;
+  }
+}

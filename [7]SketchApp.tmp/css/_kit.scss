@@ -1,0 +1,144 @@
+/*
+* 按钮的一种类型
+*
+*  1. <a class="btn">按钮</a>
+*  2. <button>按钮</button>
+*  3. <input type="submit" value="按钮" />
+*
+*/
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: $brand;
+  color: #FFF;
+  text-decoration: none; // <a class='btn' ...
+  outline: none; // <button ...
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+          transition: all .2s ease;
+  &:hover, &:active {
+    background-color: $brand-dark;
+    color: #FFF;
+  }
+}
+
+
+.button.btn-outline {
+  border-color: $brand;
+  background-color: transparent;
+  color: $brand;
+  &:hover {
+    border-color: transparent;
+    background-color: $brand;
+    color: #FFF;
+  }
+}
+
+
+.button.btn-blank {
+  border: none;
+  background-color: #FFF;
+  color: $brand;
+  &:hover, &:active {
+    color: $brand-dark;
+    background-color: $white-light;
+  }
+}
+
+
+.button.is--disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+
+
+
+/*
+* 导航栏
+* .navigation 是 导航条
+* .menu 是 导航条下面的菜单
+*/
+
+.navigation {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation.between {
+  justify-content: space-between;
+}
+
+.navigation ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navigation ul.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+
+
+
+/*
+* 引用
+*
+*/
+
+blockquote {
+  font-style: italic;
+  margin: 0;
+  //background-color: #FCFCFC;
+  //border-left: 3px solid #EAEEF1;
+  //border-radius: 3px;
+  //padding: 1em 1.2em;
+}
+
+blockquote:before {
+  color: #EAEEF1;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+//  display: inline;
+}
+
+
+
+/*
+* --------
+* 媒体类型
+* --------
+*/
+
+.media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.media.media-left {}
+.media.media-right {
+  display: flex;
+  flex-direction: column;
+}
